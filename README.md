@@ -1,20 +1,12 @@
-# Common-Theme
+# Contao Bootstrap 4 theme
 
 Dieses Modul dient als gemeinsame CSS-Code-Basis. Neben diesem Modul sollte dann ein eigenes projektspezifisches Theme erstellt werden (siehe unten).
 
-## Vendor-Versionen
-
-Hier werden enthaltene Vendor-Bibliotheken in ihren Version aufgelistet. Diese sollten regelmäßig aktualisiert oder durch eine gepflegtes Repository ersetzt werden.
-
-Vendor    |Version
-:---------|:--------
-Bourbon   | 4.3.4
-
 ## Aufbau projektspezifischer Themes
 
-### CSS
+### SCSS
 
-Hier werden alle SASS und CSS-Dateien in ihren zugehörigen Verzeichnissen abgelegt.
+Hier werden alle SASS-Dateien in ihren zugehörigen Verzeichnissen abgelegt.
 
 - **components:** Komponenten sind konfigurierbare Bausteine innerhalb unserer Seite, wie die Hauptnavigation, Nachrichtentemplates oder Tabellen. **Sowohl Mixins als CSS-Selektoren für die Komponenten werden hier abgelegt.**
 - **mixins:** Mixins sind wiederverwendbare Funktionen für SASS. Hier werden globale Verläufe, Grid- oder Sticky-Footer-Funktionen deklariert. **Hier landen ausschließlich Mixins, keine CSS-Selektoren!**
@@ -38,37 +30,46 @@ Hier werden projektspezifische Bilder und Grafiken abgelegt.
 
 ### JavaScripts
 
-Hier werden projektspezifische Javascript-Dateien abgelegt. Dafür bitte eine Datei **scripts.js** anlegen, die folgenden Aufbau aufweist:
+Hier werden projektspezifische Javascript-Dateien abgelegt. Dafür bitte eine Datei **common.js** anlegen, die folgenden Aufbau aufweist:
 
 ```
-(function ($) {
-	var common = {
-		onReady: function () {
-		
-		},
-		onResize: function () {
-		
-		}
-	};
+let u = require('umbrellajs');
 
+(function($)
+{
+    window.ContaoBootstrapCommon = {
+        onReady: function()
+        {
+        },
+        onResize: function()
+        {
+        }
+    };
 
-	// document ready shorthand
-	$(function () {
-		common.onReady();
-	});
+    document.addEventListener("DOMContentLoaded", function() {
+        window.ContaoBootstrapCommon.onReady();
+    });
 
-	$(window).resize(function () {
-		common.onResize();
-	});
-})(jQuery);
+    window.addEventListener('resize', function()
+    {
+        window.ContaoBootstrapCommon.onResize();
+    }, false);
+
+})(u);
 ```
-
-### vendor
-
-Hier werden projektspezifische Fremdbibliotheken/Bower-Plugins abgelegt.
 
 ## Verwendung
 
 ### SCSS
 
-Es muss die `scss/_common.scss`-Datei im Projekt importiert werden. Diese importiert alle enthaltenen Datein. Für eine spezifische Anpassung muss der Inhalt der `_common.scss` kopiert und ungenutzte Einträge entfernt werden. 
+Es muss die `scss/_common.scss`-Datei und `scss/_variables`-Datei (optional) im Projekt importiert werden. Diese importiert alle enthaltenen Datein. Für eine spezifische Anpassung muss der Inhalt der `_common.scss` kopiert und ungenutzte Einträge entfernt werden. 
+
+**/vendor/heimrichhannot/contao-project-bundle/src/Resources/assets/scss/project.scss**
+```
+@import "variables.scss";
+@import "~contao-bootstrap-theme/scss/_variables.scss";
+@import "~contao-bootstrap-theme/scss/_common.scss";
+
+// mixins
+...
+```
