@@ -1,5 +1,5 @@
 {
-  "name": "contao-bootstrap",
+  "name": "contao-bootstrap-theme",
   "version": "1.0.0",
   "description": "Brings the most popular front-end framework for developing responsive, mobile first projects on the web to the contao content management system.",
   "main": "js/common",
