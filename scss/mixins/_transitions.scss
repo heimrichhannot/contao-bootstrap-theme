@@ -1,0 +1,13 @@
+@mixin transition-ease($duration: 0.1s, $ease: ease-out) {
+	-webkit-transition: all $duration $ease;
+	-moz-transition: all $duration $ease;
+	-o-transition: all $duration $ease;
+	transition: all $duration $ease;
+}
+
+@mixin transition-linear($duration: 0.2s) {
+	-webkit-transition: all $duration linear;
+	-moz-transition: all $duration linear;
+	-o-transition: all $duration linear;
+	transition: all $duration linear;
+}

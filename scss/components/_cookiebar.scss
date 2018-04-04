@@ -1,0 +1,19 @@
+body {
+  #cookiebar {
+    padding-bottom: 14px;
+
+    button {
+      height: auto;
+      @extend .btn;
+      @extend .btn-primary;
+      font-size: 13px;
+      line-height: 20px;
+      display: block;
+      margin: auto;
+    }
+
+    #cookiebar-desc {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

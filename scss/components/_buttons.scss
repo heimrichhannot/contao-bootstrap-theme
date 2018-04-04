@@ -1,0 +1,10 @@
+[class*="btn"]:not(.btn-select) {
+	@include transition-ease();
+}
+
+@mixin clear-btn {
+    background: none;
+    padding: 0;
+    color: $brand-primary;
+    border: none;
+}

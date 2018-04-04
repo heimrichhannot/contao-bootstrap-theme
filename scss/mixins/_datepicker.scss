@@ -1,0 +1,43 @@
+@mixin flatpickr($nav-bar-color: map_get($theme-colors, primary), $text-color: white, $selection-color: map_get($theme-colors, primary)) {
+  .flatpickr-month {
+    height: 35px;
+    background-color: $nav-bar-color;
+    color: $text-color;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .flatpickr-prev-month, .flatpickr-next-month {
+      svg {
+        fill: $text-color;
+      }
+
+      &:hover {
+        svg {
+          opacity: 0.6;
+          fill: $text-color;
+        }
+      }
+    }
+
+    .flatpickr-current-month {
+      padding-top: 4px;
+
+      .cur-month {
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .flatpickr-innerContainer {
+    .dayContainer {
+      .flatpickr-day {
+        &.selected {
+          background: $selection-color;
+          border-color: $selection-color;
+        }
+      }
+    }
+  }
+}

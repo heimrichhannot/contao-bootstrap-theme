@@ -1,0 +1,140 @@
+$list-item-col-widths: (
+        3: (
+                xl: 3,
+                lg: 4,
+                md: 6,
+                sm: 6,
+                xs: 12
+        ),
+        4: (
+                xl: 4,
+                lg: 4,
+                md: 6,
+                sm: 6,
+                xs: 12
+        ),
+        6: (
+                xl: 6,
+                lg: 6,
+                md: 6,
+                sm: 6,
+                xs: 12
+        )
+);
+
+@mixin list-item-col-6($offset: 1, $sizes: map_get($list-item-col-widths, 6)) {
+  clear: none;
+
+  @media (max-width: (map_get($grid-breakpoints, sm) - 1)) {
+    $factor: 12 / map_get($sizes, xs);
+
+    @include make-col-ready();
+    @include make-col(map_get($sizes, xs));
+
+    &:nth-of-type(#{$factor}n+#{$offset}) {
+      clear: left;
+    }
+  }
+
+  @each $breakpoint in map_keys($grid-breakpoints) {
+    @include media-breakpoint-only($breakpoint) {
+      $factor: 12 / map_get($sizes, $breakpoint);
+
+      @include make-col-ready();
+      @include make-col(map_get($sizes, $breakpoint));
+
+      &:nth-of-type(#{$factor}n+#{$offset}) {
+        clear: left;
+      }
+    }
+  }
+
+  @media (min-width: (map_get($grid-breakpoints, xl) - 1)) {
+    $factor: 12 / map_get($sizes, xl);
+
+    @include make-col-ready();
+    @include make-col(map_get($sizes, xl));
+
+    &:nth-of-type(#{$factor}n+#{$offset}) {
+      clear: left;
+    }
+  }
+}
+
+@mixin list-item-col-4($offset: 1, $sizes: map_get($list-item-col-widths, 4)) {
+  clear: none;
+
+  @media (max-width: (map_get($grid-breakpoints, sm) - 1)) {
+    $factor: 12 / map_get($sizes, xs);
+
+    @include make-col-ready();
+    @include make-col(map_get($sizes, xs));
+
+    &:nth-of-type(#{$factor}n+#{$offset}) {
+      clear: left;
+    }
+  }
+
+  @each $breakpoint in map_keys($grid-breakpoints) {
+    @include media-breakpoint-only($breakpoint) {
+      $factor: 12 / map_get($sizes, $breakpoint);
+
+      @include make-col-ready();
+      @include make-col(map_get($sizes, $breakpoint));
+
+      &:nth-of-type(#{$factor}n+#{$offset}) {
+        clear: left;
+      }
+    }
+  }
+
+  @media (min-width: (map_get($grid-breakpoints, xl) - 1)) {
+    $factor: 12 / map_get($sizes, xl);
+
+    @include make-col-ready();
+    @include make-col(map_get($sizes, xl));
+
+    &:nth-of-type(#{$factor}n+#{$offset}) {
+      clear: left;
+    }
+  }
+}
+
+@mixin list-item-col-3($offset: 1, $sizes: map_get($list-item-col-widths, 3)) {
+  clear: none;
+
+  @media (max-width: (map_get($grid-breakpoints, sm) - 1)) {
+    $factor: 12 / map_get($sizes, xs);
+
+    @include make-col-ready();
+    @include make-col(map_get($sizes, xs));
+
+    &:nth-of-type(#{$factor}n+#{$offset}) {
+      clear: left;
+    }
+  }
+
+  @each $breakpoint in map_keys($grid-breakpoints) {
+    @include media-breakpoint-only($breakpoint) {
+      $factor: 12 / map_get($sizes, $breakpoint);
+
+      @include make-col-ready();
+      @include make-col(map_get($sizes, $breakpoint));
+
+      &:nth-of-type(#{$factor}n+#{$offset}) {
+        clear: left;
+      }
+    }
+  }
+
+  @media (min-width: (map_get($grid-breakpoints, xl) - 1)) {
+    $factor: 12 / map_get($sizes, xl);
+
+    @include make-col-ready();
+    @include make-col(map_get($sizes, xl));
+
+    &:nth-of-type(#{$factor}n+#{$offset}) {
+      clear: left;
+    }
+  }
+}

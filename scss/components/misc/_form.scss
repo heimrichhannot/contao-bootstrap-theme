@@ -1,0 +1,115 @@
+form {
+  .captcha {
+    .captcha_text {
+      font-size: $font-size-base;
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+
+  &.jquery-validation {
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    select {
+      &.error {
+        background-color: theme-color-level("danger", -10) !important;
+        clear: left;
+      }
+    }
+  }
+
+  .form-group {
+    &.has-error {
+      label, .help-block {
+        color: theme-color-level("danger", 6);
+      }
+
+      input {
+        border-color: theme-color-level("danger", -9);
+      }
+    }
+  }
+
+  p.error {
+    @extend .alert;
+    @include alert-variant(theme-color-level("danger", -10), theme-color-level("danger", -9), theme-color-level("danger", 6));
+  }
+
+  .explanation {
+    margin-top: 10px;
+  }
+
+  .checkbox-group, .radio-group {
+    > .radio-inline, > .checkbox-inline {
+      margin-left: 0 !important;
+      margin-right: 20px;
+      cursor: default;
+
+      & ~ .mandatory {
+        margin-left: -20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .custom-control-input ~ .custom-control-indicator {
+    background-color: $table-hover-bg;
+    @include transition-ease(0.2s);
+  }
+
+  .custom-control-input:focus ~ .custom-control-indicator {
+    box-shadow: none !important;
+  }
+
+  .custom-control-input:active ~ .custom-control-indicator {
+    background-color: $table-hover-bg !important;
+  }
+
+  &.jquery-validation {
+    label.error {
+      color: theme-color-level("danger", 6);
+    }
+  }
+
+  label {
+    > .mandatory {
+      display: inline-block;
+    }
+
+    + .explanation {
+      display: block;
+    }
+  }
+
+  .bootstrap-select {
+    .btn-select {
+      background-color: $input-bg;
+      color: $input-color;
+      border: 1px solid $input-border-color;
+    }
+
+    .dropdown-toggle:focus {
+      outline: none !important;
+    }
+  }
+
+  .input-group {
+    .input-group-addon {
+      cursor: pointer;
+      @include transition-ease();
+
+      &:hover {
+        background-color: darken(#E9ECEF, 5%);
+      }
+    }
+  }
+
+  .bootstrap-datetimepicker-widget {
+    .collapse.in {
+      display: block;
+    }
+  }
+}

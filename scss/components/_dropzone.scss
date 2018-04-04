@@ -1,0 +1,21 @@
+.dropzone {
+    margin-bottom: 15px;
+
+    .dz-container {
+        .dropzone-previews {
+            .dz-preview {
+                .dz-image {
+                    background: #eee;
+                }
+
+                .dz-remove {
+                    background-color: white;
+
+                    &:hover {
+                        background-color: #be2626;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/// Columns for Contao gallery
+///
+/// Creates styles to display the contao image gallery with columns.
+/// By default, all galleries up to the grid column count of bootstrap (default 12) are styled.
+/// It is possible to customize output by changing column count and the scaling factors for little screens.
+///
+/// The column size is calculated by $columns / $factor,
+/// so with a $xs-factor of 1 an image will span full width at xs screens.
+///
+/// @param int $columns [$grid-columns] - Number of grid columns
+/// @param int $xs-factor [1]
+/// @param int $sm-factor [2}
+@mixin make-gallery-columns($columns: $grid-columns, $xs-factor: 1, $sm-factor: 2) {
+
+  @for $i from 1 through $columns {
+    .ce_gallery .cols_#{$i} li {
+      @include make-col-ready();
+
+      @include media-breakpoint-down(xs) {
+        @include make-col($columns / $xs-factor);
+      }
+
+      @include media-breakpoint-only(sm) {
+        @include make-col($columns / $sm-factor);
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col($columns / $i);
+      }
+
+      figure {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

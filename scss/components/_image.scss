@@ -1,0 +1,9 @@
+img {
+  display: block;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto;
+}
+
+figure {
+  min-height: 1px; //IE fix
+}

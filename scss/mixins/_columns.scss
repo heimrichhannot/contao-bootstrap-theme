@@ -1,0 +1,130 @@
+@mixin make-xl-col($size) {
+  @include media-breakpoint-only(xl) {
+    @include make-col-ready();
+    @include make-col($size);
+  }
+}
+
+@mixin make-lg-col($size) {
+  @include media-breakpoint-only(lg) {
+    @include make-col-ready();
+    @include make-col($size);
+  }
+}
+
+@mixin make-md-col($size) {
+  @include media-breakpoint-only(md) {
+    @include make-col-ready();
+    @include make-col($size);
+  }
+}
+
+@mixin make-sm-col($size) {
+  @include media-breakpoint-only(sm) {
+    @include make-col-ready();
+    @include make-col($size);
+  }
+}
+
+@mixin make-xs-col($size) {
+  @include media-breakpoint-only(xs) {
+    @include make-col-ready();
+    @include make-col($size);
+  }
+}
+
+@mixin col($size) {
+  @include make-col-ready();
+  @include make-col($size);
+}
+
+@mixin make-col-right-offset($size, $columns: $grid-columns) {
+  margin-right: percentage($size / $columns);
+}
+
+/** breakpoint shortcuts **/
+@mixin xl {
+  //@include media-breakpoint-only(xl) {
+  //  @content;
+  //}
+
+  @media (min-width: (map_get($grid-breakpoints, xl) - 1)) {
+    @content;
+  }
+}
+
+@mixin xl-down {
+  @include media-breakpoint-down(xl) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @include media-breakpoint-only(lg) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @include media-breakpoint-up(lg) {
+    @content;
+  }
+}
+
+@mixin lg-down {
+  @include media-breakpoint-down(lg) {
+    @content;
+  }
+}
+
+@mixin md {
+  @include media-breakpoint-only(md) {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @include media-breakpoint-up(md) {
+    @content;
+  }
+}
+
+@mixin md-down {
+  @include media-breakpoint-down(md) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @include media-breakpoint-only(sm) {
+    @content;
+  }
+}
+
+@mixin sm-up {
+  @include media-breakpoint-up(sm) {
+    @content;
+  }
+}
+
+@mixin sm-down {
+  @include media-breakpoint-down(sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  //@include media-breakpoint-down(xs) {
+  //  @content;
+  //}
+
+  @media (max-width: (map_get($grid-breakpoints, sm) - 1)) {
+    @content;
+  }
+}
+
+@mixin xs-up {
+  @include media-breakpoint-up(xs) {
+    @content;
+  }
+}

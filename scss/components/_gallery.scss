@@ -1,0 +1,15 @@
+/// Defaut Contao gallery style
+
+.ce_gallery {
+  ul {
+    @extend .list-unstyled;
+    @include make-row();
+    margin-top: -$grid-gutter-width;
+
+    li {
+      margin-top: $grid-gutter-width;
+    }
+  }
+}
+
+@include make-gallery-columns();

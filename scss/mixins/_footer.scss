@@ -1,0 +1,56 @@
+@mixin sticky-footer($footerHeight) {
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+
+	body {
+        @include media-breakpoint-up(md) {
+			margin-bottom: $footerHeight;
+		}
+	}
+
+	#footer {
+		width: 100%;
+		overflow: hidden;
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: $footerHeight;
+
+			> .inside {
+				height: $footerHeight;
+
+				&.container {
+					position: relative;
+				}
+			}
+
+			.footer-top {
+				max-height: ceil($footerHeight - $footerHeight / 3 - $grid-gutter-width-base);
+			}
+
+			.footer-bottom {
+				position: absolute;
+				bottom: $grid-gutter-width-base * 2;
+				width: 100%;
+			}
+
+			.footer-bottom,
+			.footer-top {
+
+				.footer-top-left,
+				.footer-top-right,
+				.footer-bottom-left,
+				.footer-bottom-right {
+					display: table-cell;
+					float: none;
+					vertical-align: bottom;
+				}
+
+			}
+		}
+	}
+}
