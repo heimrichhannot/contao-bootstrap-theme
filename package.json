@@ -1,14 +1,14 @@
 {
   "name": "contao-bootstrap-theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Brings the most popular front-end framework for developing responsive, mobile first projects on the web to the contao content management system.",
   "main": "js/common",
   "repository": "git@bitbucket.org:heimrichhannot/contao-common_theme_base_sass.git",
   "author": "Rico Kaltofen <r.kaltofen@heimrich-hannot.de>",
   "license": "MIT",
   "dependencies": {
-    "umbrellajs": "^2.0",
     "bootstrap": "^4.0",
-    "font-awesome": "^4.7"
+    "font-awesome": "^4.7",
+    "umbrellajs": "^2.0"
   }
 }
