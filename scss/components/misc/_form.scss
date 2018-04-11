@@ -96,8 +96,8 @@ form {
     }
   }
 
-  .input-group {
-    .input-group-addon {
+  .input-group-append {
+    .input-group-text {
       cursor: pointer;
       @include transition-ease();
 
