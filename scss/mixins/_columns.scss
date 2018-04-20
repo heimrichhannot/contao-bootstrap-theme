@@ -128,3 +128,48 @@
     @content;
   }
 }
+
+/* Make custom row with custom gutter widths, use something like
+ $grid-gutter-widths-sm: (
+    xs: 10px,
+    sm: 10px,
+    md: 10px,
+    lg: 10px,
+xl: 10px
+) !default;
+
+for $gutters variables
+*/
+@mixin make-custom-row($gutters: null) {
+  display: flex;
+  flex-wrap: wrap;
+
+  @if $gutters {
+    @each $breakpoint in map-keys($gutters) {
+      @include media-breakpoint-up($breakpoint) {
+        $gutter: map-get($gutters, $breakpoint);
+        margin-right: ($gutter / -2);
+        margin-left: ($gutter / -2);
+      }
+    }
+  }
+}
+
+@mixin make-custom-col-ready($gutters: null) {
+  position: relative;
+  // Prevent columns from becoming too narrow when at smaller grid tiers by
+  // always setting `width: 100%;`. This works because we use `flex` values
+  // later on to override this initial width.
+  width: 100%;
+  min-height: 1px; // Prevent collapsing
+
+  @if $gutters {
+    @each $breakpoint in map-keys($gutters) {
+      @include media-breakpoint-up($breakpoint) {
+        $gutter: map-get($gutters, $breakpoint);
+        padding-right: ($gutter / 2);
+        padding-left: ($gutter / 2);
+      }
+    }
+  }
+}

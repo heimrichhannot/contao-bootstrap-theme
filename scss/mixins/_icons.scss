@@ -8,8 +8,9 @@
   @if ($placement != 'before' and $placement != 'after') {
     @error 'The icon placement can only be set as \'before\' or \'after\'';
   }
-  @include fa-icon();
+
   &::#{$placement} {
+    @include fa-icon();
     content: $icon;
   }
 }

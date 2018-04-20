@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2018-04-12
+
+### Added
+- `make-custom-row` and `make-custom-col-ready` mixin
+
+## [1.0.5] - 2018-04-12
+
+### Fixed
+- fixed `$fa-font-path`
+
 ## [1.0.4] - 2018-04-11
 
 ### Fixed
