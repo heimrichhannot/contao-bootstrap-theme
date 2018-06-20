@@ -55,17 +55,15 @@ form {
     }
   }
 
-  .custom-control-input ~ .custom-control-indicator {
-    background-color: $table-hover-bg;
-    @include transition-ease(0.2s);
-  }
-
-  .custom-control-input:focus ~ .custom-control-indicator {
-    box-shadow: none !important;
-  }
-
-  .custom-control-input:active ~ .custom-control-indicator {
-    background-color: $table-hover-bg !important;
+  .custom-control-label {
+    &::before {
+      background-color: $table-hover-bg;
+      @include transition-ease(0.2s);
+      box-shadow: none !important;
+    }
+    &:active::before {
+      background-color: $table-hover-bg !important;
+    }
   }
 
   &.jquery-validation {
