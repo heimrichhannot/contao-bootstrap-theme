@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2018-06-20
+
+### Added
+- font-face() from bourbon
+
 ## [1.0.6] - 2018-04-12
 
 ### Added
