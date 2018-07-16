@@ -27,7 +27,7 @@
     &.timepicker {
       &::before {
         @include fa-icon();
-        content: $fa-var-clock-o;
+        content: $fa-var-clock;
       }
     }
   }

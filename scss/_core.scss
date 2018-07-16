@@ -2,5 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 // Fonts & Icons
-$fa-font-path: "~font-awesome/fonts/";
-@import "~font-awesome/scss/font-awesome";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/fa-solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/fa-regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/fa-brands.scss";

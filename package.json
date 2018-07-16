@@ -9,6 +9,6 @@
   "dependencies": {
     "umbrellajs": "^2.0",
     "bootstrap": "^4.0",
-    "font-awesome": "^4.7"
+    "@fortawesome/fontawesome-free": "^5.1"
   }
 }
