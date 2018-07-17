@@ -1,5 +1,9 @@
 [class*="btn"]:not(.btn-select) {
 	@include transition-ease();
+
+  &::before {
+    @include transition-ease();
+  }
 }
 
 @mixin clear-btn {

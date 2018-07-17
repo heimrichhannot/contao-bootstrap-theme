@@ -16,6 +16,12 @@ body {
     #cookiebar-text {
       width: 100%;
       margin-bottom: 0.5rem;
+      margin-right: 0;
+
+      .cookiebar__message {
+        color: white;
+        margin-right: 0;
+      }
     }
   }
 }
