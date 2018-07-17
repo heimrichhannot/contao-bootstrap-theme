@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2018-07-17
+
+### Added
+- alerts
+
 ## [2.0.2] - 2018-07-17
 
 ### Fixed
