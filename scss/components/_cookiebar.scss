@@ -1,5 +1,6 @@
 body {
-  #cookiebar {
+  .cookiebar {
+    background-color: theme-color(secondary);
     padding-bottom: 14px;
 
     button {
@@ -12,7 +13,8 @@ body {
       margin: auto;
     }
 
-    #cookiebar-desc {
+    #cookiebar-text {
+      width: 100%;
       margin-bottom: 0.5rem;
     }
   }

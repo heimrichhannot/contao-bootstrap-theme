@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.0.1] - 2018-07-17
+
+### Fixed
+- cookie bar
+
 ## [2.0.0] - 2018-07-16
 
 ### Added
