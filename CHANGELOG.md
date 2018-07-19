@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.1.2] - 2018-07-19
+
+### Fixed
+- accordion
+
 ## [2.1.1] - 2018-07-17
 
 ### Fixed
