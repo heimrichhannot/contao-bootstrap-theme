@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.1.3] - 2018-09-21
+
+### Fixed
+- fontawesome-icon mixin
+
 ## [2.1.2] - 2018-07-19
 
 ### Fixed
