@@ -4,3 +4,6 @@ $path-common-css: '#{$path-common-base}/css';
 $path-common-img: '#{$path-common-base}/img';
 $path-common-font: '#{$path-common-base}/font';
 $path-common-vendor: '#{$path-common-base}/vendor';
+
+// display/visibilty body classes
+$body-display-classes: ('ios', 'android') !default;

@@ -1,10 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [2.1.3] - 2018-09-21
+## [2.2.0] - 2018-10-25
 
-### Fixed
-- fontawesome-icon mixin
+### Added
+- `d-ios-` and `d-android-` display utilities use `d-none d-ios-flex` classes to display elements only on ios devices
 
 ## [2.1.2] - 2018-07-19
 

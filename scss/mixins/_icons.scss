@@ -10,7 +10,7 @@
   }
 
   &::#{$placement} {
-    @extend .fas;
-    content: fa-content($icon);
+    @include fa-icon();
+    content: $icon;
   }
 }

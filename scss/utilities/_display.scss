@@ -1,0 +1,13 @@
+@each $body-display-class in $body-display-classes {
+  body.#{$body-display-class}{
+    .d-#{$body-display-class}-none         { display: none !important; }
+    .d-#{$body-display-class}-inline       { display: inline !important; }
+    .d-#{$body-display-class}-inline-block { display: inline-block !important; }
+    .d-#{$body-display-class}-block        { display: block !important; }
+    .d-#{$body-display-class}-table        { display: table !important; }
+    .d-#{$body-display-class}-table-row    { display: table-row !important; }
+    .d-#{$body-display-class}-table-cell   { display: table-cell !important; }
+    .d-#{$body-display-class}-flex         { display: flex !important; }
+    .d-#{$body-display-class}-inline-flex  { display: inline-flex !important; }
+  }
+}
