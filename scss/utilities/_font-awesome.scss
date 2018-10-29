@@ -1,0 +1,3 @@
+@each $name, $variable in $fa-class-icons {
+  .#{$fa-css-prefix}-#{$name}:before { content: fa-content($variable); }
+}

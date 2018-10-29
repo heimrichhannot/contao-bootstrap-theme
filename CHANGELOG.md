@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.3.0] - 2018-10-29
+
+### Added
+- font awesome utility for creating the fa classes defined in `$fa-class-icons`
+
+### Removed
+- font awesome's `icons.scss` in order to reduce CSS size
+
 ## [2.2.0] - 2018-10-25
 
 ### Added
