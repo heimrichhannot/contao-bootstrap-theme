@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.4.0] - 2018-10-29
+
+### Added
+- missing mixins `form-control-sm()`, `form-control-lg()`, `btn-sm()`, `btn-lg()`
+
 ## [2.3.0] - 2018-10-29
 
 ### Added
