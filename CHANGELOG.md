@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.5.0] - 2018-10-29
+
+### Added
+- missing mixins `form-control-base()`, `btn-base()`
+- responsive helper classes `.form-control-sm-sm`,`.form-control-md-sm`,`.form-control-lg-sm`,`.form-control-xl-sm`, dont forget to add `.form-control` to element
+- responsive helper classes `.form-control-sm-base`,`.form-control-md-base`,`.form-control-lg-base`,`.form-control-xl-base`, dont forget to add `.form-control` to element
+- responsive helper classes `.form-control-sm-lg`,`.form-control-md-lg`,`.form-control-lg-lg`,`.form-control-xl-lg`, dont forget to add `.form-control` to element 
+- responsive helper classes `.btn-sm-sm`,`.btn-md-sm`,`.btn-lg-sm`,`.btn-xl-sm`
+- responsive helper classes `.btn-sm-base`,`.btn-md-base`,`.btn-lg-base`,`.btn-xl-base`
+- responsive helper classes `.btn-sm-lg`,`.btn-md-lg`,`.btn-lg-lg`,`.btn-xl-lg`
+
 ## [2.4.0] - 2018-10-29
 
 ### Added
