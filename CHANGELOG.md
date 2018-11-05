@@ -1,11 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.6.0] - 2018-11-05
+
+### Added
+- font awesome 5.5
+- fa-icon-before
+- fa-icon-after
+
 ## [2.5.1] - 2018-11-05
 
 ### Fixed
 - removed dump message
-
 
 ## [2.5.0] - 2018-10-29
 
