@@ -17,8 +17,6 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-@debug $infix;
-
     .btn#{$infix}-base {
       @include btn-base();
     }
