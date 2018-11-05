@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.6.1] - 2018-11-05
+
+### Fixed
+- font awesome 5.5 issues
+
 ## [2.6.0] - 2018-11-05
 
 ### Added
