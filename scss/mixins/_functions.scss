@@ -2,3 +2,9 @@
   $new: ($key: $value);
   @return map-merge($map, $new);
 }
+
+// STRIP UNIT
+// It strips the unit of measure and returns it
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}

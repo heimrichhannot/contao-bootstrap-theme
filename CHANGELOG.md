@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.7.0] - 2018-11-13
+
+### Added
+- responsive type `fluid-type` mixin 
+
 ## [2.6.2] - 2018-11-05
 
 ### Removed

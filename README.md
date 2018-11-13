@@ -73,3 +73,92 @@ Es muss die `scss/_common.scss`-Datei und `scss/_variables`-Datei (optional) im 
 // mixins
 ...
 ```
+
+
+## Mixins
+
+### Responsive font size `fluid-type`
+
+Um Überschriften responsive optimal auszuliefern und den Aufwand der Dimensionierung pro Breakpoint so gering wie möglich zu halten gibt es das mixin `fluid-type`
+
+```
+// _variables.scss
+$h1-font-size: 3.75rem; // ~60px
+$h2-font-size: 3.315rem; // ~53px
+$h3-font-size: 1.935rem; // ~31px
+$h4-font-size: 1.315rem; // ~21px
+$h5-font-size: 1.625rem; // ~25px
+$h6-font-size: $font-size-base; // ~17px
+
+$h1-font-sizes: (
+  min: $h1-font-size * 0.55,
+  max: $h1-font-size
+);
+
+$h2-font-sizes: (
+  min: $h2-font-size * 0.5,
+  max: $h2-font-size
+);
+
+$h2-lg-font-sizes: (
+  min: $h2-font-size * 0.75 * 1.1,
+  max: $h2-font-size * 1.1
+);
+
+$h3-font-sizes: (
+  min: $h3-font-size * 0.7,
+  max: $h3-font-size
+);
+
+$h4-font-sizes: (
+  min: $h4-font-size * 0.7,
+  max: $h4-font-size
+);
+
+$h5-font-sizes: (
+  min: $h5-font-size * 0.7,
+  max: $h5-font-size
+);
+
+$h6-font-sizes: (
+  min: $h6-font-size,
+  max: $h6-font-size
+);
+```
+
+```
+// _type.scss
+h1, .h1 {
+  @include fluid-type(map_get($container-max-widths, 'sm'),map_get($container-max-widths, 'xl'), map_get($h1-font-sizes, 'min'), map_get($h1-font-sizes, 'max'));
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  @include fluid-type(map_get($container-max-widths, 'sm'),map_get($container-max-widths, 'xl'), map_get($h2-font-sizes, 'min'), map_get($h2-font-sizes, 'max'));
+  color: $body-color;
+  line-height: 1.2;
+}
+
+h3, .h3 {
+  @include fluid-type(map_get($container-max-widths, 'sm'),map_get($container-max-widths, 'xl'), map_get($h3-font-sizes, 'min'), map_get($h3-font-sizes, 'max'));
+  margin-bottom: 1rem;
+}
+
+h4, .h4 {
+  @include fluid-type(map_get($container-max-widths, 'sm'),map_get($container-max-widths, 'xl'), map_get($h4-font-sizes, 'min'), map_get($h4-font-sizes, 'max'));
+  font-weight: $font-weight-base;
+  margin-bottom: 1rem;
+}
+
+h5, .h5 {
+  @include fluid-type(map_get($container-max-widths, 'sm'),map_get($container-max-widths, 'xl'), map_get($h5-font-sizes, 'min'), map_get($h5-font-sizes, 'max'));
+  color: theme-color('primary');
+  margin-bottom: 1rem;
+}
+
+h6, .h6 {
+  @include fluid-type(map_get($container-max-widths, 'sm'),map_get($container-max-widths, 'xl'), map_get($h6-font-sizes, 'min'), map_get($h6-font-sizes, 'max'));
+  margin-bottom: 1rem;
+}
+```
+
