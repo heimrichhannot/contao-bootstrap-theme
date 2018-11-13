@@ -18,8 +18,6 @@
 
   .pagination {
     li {
-      @extend .page-item;
-
       @include media-breakpoint-down(sm) {
         &:not(.first):not(.last):not(.previous):not(.next) {
           display: none;
@@ -27,10 +25,8 @@
       }
 
       > span, a {
-        @extend .page-link;
-
-        &:not(.active) {
-          cursor: pointer;
+        &.active {
+          cursor: default;
         }
 
         &.active {
