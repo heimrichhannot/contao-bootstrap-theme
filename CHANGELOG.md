@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.8.0] - 2018-11-14
+
+### Changed
+- removed `*:focus` (outline: none !important) rule
+
 ## [2.7.1] - 2018-11-13
 
 ### Fixed
