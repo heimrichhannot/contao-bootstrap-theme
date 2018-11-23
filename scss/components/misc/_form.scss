@@ -59,7 +59,6 @@ form {
     &::before {
       background-color: $table-hover-bg;
       @include transition-ease(0.2s);
-      box-shadow: none !important;
     }
     &:active::before {
       background-color: $table-hover-bg !important;

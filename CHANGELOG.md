@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.8.1] - 2018-11-23
+
+### Fixed
+- do not remove box-shadow on custom-control-label pseudo element, in order to provide aria support (:focus highlighting)
+
 ## [2.8.0] - 2018-11-14
 
 ### Changed
