@@ -60,6 +60,7 @@ form {
       background-color: $table-hover-bg;
       @include transition-ease(0.2s);
     }
+
     &:active::before {
       background-color: $table-hover-bg !important;
     }
@@ -112,25 +113,55 @@ form {
 }
 
 .choices {
-  .choices__inner {
-    @extend .form-control;
+  &[data-type^="select-"] {
+    .choices__inner {
+      @extend .form-control;
 
-    .choices__list {
-      padding: 0;
+      .choices__list {
+        padding: 0;
+      }
+    }
+  }
+
+  &[data-type="text"] {
+    margin-bottom: 0;
+    font-size: initial;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+
+    .choices__inner {
+      display: block;
+      background-color: white;
+      border: 0;
+      border-radius: 0;
+      font-size: initial;
+      min-height: 0;
+      overflow: visible;
+      padding: 0 !important;
+      height: auto !important;
+    }
+
+    input[type="text"].choices__input--cloned {
+      @extend .form-control;
+      width: 100% !important;
+      margin-bottom: 0;
     }
   }
 
   &.is-focused {
-    .choices__inner {
-      color: $input-focus-color;
-      background-color: $input-focus-bg;
-      border-color: $input-focus-border-color;
-      outline: 0;
-      // Avoid using mixin so we can pass custom focus shadow properly
-      @if $enable-shadows {
-        box-shadow: $input-box-shadow, $input-focus-box-shadow;
-      } @else {
-        box-shadow: $input-focus-box-shadow;
+    &[data-type^="select-"] {
+      .choices__inner {
+        color: $input-focus-color;
+        background-color: $input-focus-bg;
+        border-color: $input-focus-border-color;
+        outline: 0;
+        // Avoid using mixin so we can pass custom focus shadow properly
+        @if $enable-shadows {
+          box-shadow: $input-box-shadow, $input-focus-box-shadow;
+        } @else {
+          box-shadow: $input-focus-box-shadow;
+        }
       }
     }
   }
