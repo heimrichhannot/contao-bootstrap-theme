@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.9.0] - 2018-12-17
+
+### Added
+- support for choices.js
+
 ## [2.8.1] - 2018-11-23
 
 ### Fixed
