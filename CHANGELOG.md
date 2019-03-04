@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.0.1] - 2019-03-04
+
+### Added
+- .gitignore
+
 ## [3.0.0] - 2019-03-04
 
 ### Changed
