@@ -56,13 +56,9 @@ form {
   }
 
   .custom-control-label {
-    &::before {
+    &:hover::before {
       background-color: $table-hover-bg;
       @include transition-ease(0.2s);
-    }
-
-    &:active::before {
-      background-color: $table-hover-bg !important;
     }
   }
 
@@ -163,6 +159,52 @@ form {
           box-shadow: $input-focus-box-shadow;
         }
       }
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .form-control#{$infix}-base {
+      @include form-control-base();
+    }
+
+    .form-control#{$infix}-sm {
+      @include form-control-sm();
+    }
+
+    .form-control#{$infix}-lg {
+      @include form-control-lg();
+    }
+  }
+}
+
+.form-control-sm {
+  .input-group & {
+    &:not(:last-child) {
+      @include border-right-radius(0);
+    }
+  }
+
+  .input-group & {
+    &:not(:first-child) {
+      @include border-left-radius(0);
+    }
+  }
+}
+
+.form-control-lg {
+  .input-group & {
+    &:not(:last-child) {
+      @include border-right-radius(0);
+    }
+  }
+
+  .input-group & {
+    &:not(:first-child) {
+      @include border-left-radius(0);
     }
   }
 }

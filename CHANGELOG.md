@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] - 2019-03-04
+
+### Changed
+- module namespace to `@hundh/contao-bootstrap-theme`
+
+### Removed
+- umbrella.js as a dependency (JavaScript is vanilla now)
+
+### Fixed
+- scss folder structure
+- form custom control checkbox background color
+
 ## [2.10.0] - 2018-12-17
 
 ### Added

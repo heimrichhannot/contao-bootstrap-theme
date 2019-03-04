@@ -1,37 +1,30 @@
-let u = require('umbrellajs');
+class ContaoBootstrapThemeCommon {
+    static onReady() {
+        ContaoBootstrapThemeCommon.initColFull();
+    }
+    
+    static onResize() {
+        ContaoBootstrapThemeCommon.initColFull();
+    }
+    
+    static initColFull() {
+        let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            containers = document.querySelectorAll('.container'),
+            containerWidth = 0;
 
-(function($)
-{
-    window.ContaoBootstrapCommon = {
-        onReady: function()
+        if (containers.length < 1)
         {
-            this.initColFull();
-        },
-        onResize: function()
-        {
-            this.initColFull();
-        },
-        initColFull: function()
-        {
-            let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-                containerWidth = u('.container:first').offsetWidth;
-
-            u('.col-full').each(function(node, i)
-            {
-
-		u(node).style.marginLeft = (width - containerWidth) / -2;
-		u(node).style.marginRight = (width - containerWidth) / -2;
-            });
+            return;
         }
-    };
 
-    document.addEventListener("DOMContentLoaded", function() {
-        window.ContaoBootstrapCommon.onReady();
-    });
+        containerWidth = containers[0].offsetWidth;
 
-    window.addEventListener('resize', function()
-    {
-        window.ContaoBootstrapCommon.onResize();
-    }, false);
+        document.querySelectorAll('.col-full').forEach(function(item) {
+            item.style.marginLeft = ((width - containerWidth) / -2) + 'px';
+            item.style.marginRight = ((width - containerWidth) / -2) + 'px';
+        });
+    }
+}
 
-})(u);
+document.addEventListener('DOMContentLoaded', ContaoBootstrapThemeCommon.onReady, true);
+document.addEventListener('resize', ContaoBootstrapThemeCommon.onResize, true);

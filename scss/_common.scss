@@ -19,21 +19,20 @@
 @import "regions/base";
 
 // components
-@import "components/misc/form";
-@import "components/misc/status-messages";
-@import "components/misc/type";
 @import "components/accordion";
 @import "components/alert";
 @import "components/buttons";
 @import "components/cookiebar";
 @import "components/datepicker";
 @import "components/dropzone";
-@import "components/forms";
+@import "components/form";
 @import "components/image";
 @import "components/modal";
 @import "components/gallery";
 @import "components/pagination";
+@import "components/status-messages";
 @import "components/tinymce";
+@import "components/type";
 
 // utilities
 @import "utilities/display";

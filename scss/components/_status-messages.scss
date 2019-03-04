@@ -1,0 +1,27 @@
+.mod_status_messages {
+  margin-bottom: 0 !important;
+
+  [class^="msg-"] {
+    @extend .alert;
+
+    a, strong, span {
+      color: inherit;
+    }
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .msg-success {
+    @extend .alert-success;
+  }
+
+  .msg-error {
+    @extend .alert-danger;
+  }
+
+  .msg-info {
+    @extend .alert-warning;
+  }
+}
