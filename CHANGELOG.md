@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.1] - 2019-03-22
+
+### Fixed
+- import `variables.scss` in `core.scss`
+
 ## [4.0.0] - 2019-03-22
 
 ### Added
