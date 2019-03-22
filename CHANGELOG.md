@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.0] - 2019-03-22
+
+### Added
+- created `_mixins.scss` that contains all mixins, and no generated css-code
+- created `_functions.scss` that contains all functions that should be loaded before all mixins, components and utilities
+- created `_components.scss` that contains all components
+- created `_contao-helper.scss` that contains all core contao related css rules, that normally are shipped with assets/contao/css/layout.css 
+
+### Changed
+- font-awesome is no longer a core dependency, import `utilities/font-awesome` now
+
 ## [3.0.1] - 2019-03-04
 
 ### Added

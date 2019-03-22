@@ -7,3 +7,10 @@ a {
 .primary {
   color: map-get($theme-colors, primary);
 }
+
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,3 +1,82 @@
+// Fonts & Icons
+@import '~@fortawesome/fontawesome-free/scss/variables';
+@import '~@fortawesome/fontawesome-free/scss/mixins';
+@import '~@fortawesome/fontawesome-free/scss/core';
+@import '~@fortawesome/fontawesome-free/scss/larger';
+@import '~@fortawesome/fontawesome-free/scss/fixed-width';
+@import '~@fortawesome/fontawesome-free/scss/list';
+@import '~@fortawesome/fontawesome-free/scss/bordered-pulled';
+@import '~@fortawesome/fontawesome-free/scss/animated';
+@import '~@fortawesome/fontawesome-free/scss/rotated-flipped';
+@import '~@fortawesome/fontawesome-free/scss/stacked';
+// skip icons.scss
+@import '~@fortawesome/fontawesome-free/scss/screen-reader';
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
 @each $name, $variable in $fa-class-icons {
-  .#{$fa-css-prefix}-#{$name}:before { content: fa-content($variable); }
+  .#{$fa-css-prefix}-#{$name}:before {
+    content: fa-content($variable);
+  }
+}
+
+@mixin fa-icon-before($icon, $font: 'fas') {
+  @if $font == 'fas' {
+    &:before {
+      @include fa-icon;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: fa-content($icon);
+    }
+  } @else if $font == 'far' {
+    &:before {
+      @include fa-icon;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      content: fa-content($icon);
+    }
+  } @else if $font == 'fab' {
+    &:before {
+      @include fa-icon;
+      font-family: 'Font Awesome 5 Brands';
+      content: fa-content($icon);
+    }
+  }
+}
+
+@mixin fa-icon-after($icon, $font: 'fas') {
+  @if $font == 'fas' {
+    &:after {
+      @include fa-icon;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: fa-content($icon);
+    }
+  } @else if $font == 'far' {
+    &:after {
+      @include fa-icon;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 400;
+      content: fa-content($icon);
+    }
+  } @else if $font == 'fab' {
+    &:after {
+      @include fa-icon;
+      font-family: 'Font Awesome 5 Brands';
+      content: fa-content($icon);
+    }
+  }
+}
+
+
+@mixin fontawesome-icon($icon, $placement: 'before') {
+  @warn "Deprecated, use fa-icon-after() or fa-icon-before() mixins for proper Font-Awesome 5.0+ support, will be removed with version 5.";
+
+
+  @if $placement == 'after' {
+    @include fa-icon-after($icon);
+  } @else {
+    @include fa-icon-before($icon);
+  }
 }

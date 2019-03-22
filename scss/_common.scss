@@ -1,38 +1,5 @@
 @import "variables";
 @import "core";
-
-// mixins
-@import "mixins/functions";
-@import "mixins/columns";
-@import "mixins/datepicker";
-@import "mixins/footer";
-@import "mixins/list";
-@import "mixins/transitions";
-@import "mixins/type";
-@import "mixins/gallery";
-@import "mixins/icons";
-@import "mixins/buttons";
-@import "mixins/forms";
-@import "mixins/font-awesome";
-
-// regions
 @import "regions/base";
-
-// components
-@import "components/accordion";
-@import "components/alert";
-@import "components/buttons";
-@import "components/cookiebar";
-@import "components/datepicker";
-@import "components/dropzone";
-@import "components/form";
-@import "components/image";
-@import "components/modal";
-@import "components/gallery";
-@import "components/pagination";
-@import "components/status-messages";
-@import "components/tinymce";
-@import "components/type";
-
-// utilities
-@import "utilities/display";
+@import "components";
+@import "utilities";

@@ -24,3 +24,10 @@
     &:not(:first-child) { @include border-left-radius(0); }
   }
 }
+
+@mixin clear-btn($color: theme-color('primary')) {
+  background: none;
+  padding: 0;
+  color: $color;
+  border: none;
+}
