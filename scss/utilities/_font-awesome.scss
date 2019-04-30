@@ -69,6 +69,25 @@
   }
 }
 
+.touchevents {
+  .flatpickr-mobile {
+
+    &.datepicker {
+      &::before {
+        @include fa-icon();
+        content: $fa-var-calendar;
+      }
+    }
+
+    &.timepicker {
+      &::before {
+        @include fa-icon();
+        content: $fa-var-clock;
+      }
+    }
+  }
+}
+
 
 @mixin fontawesome-icon($icon, $placement: 'before') {
   @warn "Deprecated, use fa-icon-after() or fa-icon-before() mixins for proper Font-Awesome 5.0+ support, will be removed with version 5.";

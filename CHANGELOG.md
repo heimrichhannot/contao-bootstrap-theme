@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.2] - 2019-04-30
+
+### Fixed
+- moved font awesome leftovers into `utilities/font-awesome`
+
 ## [4.0.1] - 2019-03-22
 
 ### Fixed

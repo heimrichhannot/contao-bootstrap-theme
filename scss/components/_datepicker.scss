@@ -16,20 +16,6 @@
       margin-top: 5px;
       margin-right: 7px;
     }
-
-    &.datepicker {
-      &::before {
-        @include fa-icon();
-        content: $fa-var-calendar;
-      }
-    }
-
-    &.timepicker {
-      &::before {
-        @include fa-icon();
-        content: $fa-var-clock;
-      }
-    }
   }
 }
 

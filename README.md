@@ -2,6 +2,12 @@
 
 Dieses Modul dient als gemeinsame CSS-Code-Basis. Neben diesem Modul sollte dann ein eigenes projektspezifisches Theme erstellt werden (siehe unten).
 
+## Installation 
+
+```
+yarn add @hundh/contao-bootstrap-theme
+```
+
 ## Aufbau projektspezifischer Themes
 
 ### SCSS
