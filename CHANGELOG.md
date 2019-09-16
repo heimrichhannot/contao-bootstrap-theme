@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.1.0] - 2019-09-16
+
+### Added
+- more spacer classes (6 to 10)
+
 ## [4.0.2] - 2019-04-30
 
 ### Fixed
