@@ -14,7 +14,7 @@
   }
 
   .swal-button--cancel {
-    @include button-variant(theme-color(white), theme-color(white));
+    @include button-variant(white, white);
   }
 
   .swal-button--confirm {

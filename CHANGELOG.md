@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.2.1] - 2019-09-17
+
+### Fixed
+- sweet alert issue
+
 ## [4.2.0] - 2019-09-17
 
 ### Added
