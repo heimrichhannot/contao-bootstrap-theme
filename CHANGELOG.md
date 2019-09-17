@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.1.1] - 2019-09-17
+
+### Changed
+- variables.scss import position
+
 ## [4.1.0] - 2019-09-16
 
 ### Added
