@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.2.0] - 2019-09-17
+
+### Added
+- privacy center
+- sweet alert
+
 ## [4.1.1] - 2019-09-17
 
 ### Changed

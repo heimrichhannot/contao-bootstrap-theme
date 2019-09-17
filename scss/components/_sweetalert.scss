@@ -1,0 +1,23 @@
+.swal-modal {
+  animation: none !important;
+  border-radius: 0;
+
+  [name="save-setting"] {
+    margin-top: 10px;
+  }
+
+  .swal-button {
+    border-radius: 0;
+    @extend .btn;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .swal-button--cancel {
+    @include button-variant(theme-color(white), theme-color(white));
+  }
+
+  .swal-button--confirm {
+    @include button-variant(theme-color(primary), theme-color(primary));
+  }
+}

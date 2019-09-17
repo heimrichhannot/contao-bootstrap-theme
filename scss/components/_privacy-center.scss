@@ -1,0 +1,33 @@
+.privacy-center {
+  .confirmation a {
+    margin-right: 0 !important;
+  }
+}
+
+.ce_privacy_center_summary {
+  .actions {
+    text-align: right;
+    padding-top: 2rem;
+  }
+}
+
+.privacy-center-protected-code {
+  height: 100%;
+
+  .poster {
+    img {
+      opacity: 0.3;
+      margin: auto;
+    }
+
+    .allow-protected-code {
+      @extend .btn;
+      @extend .btn-primary;
+      margin-bottom: 0 !important;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      margin-left: -70px;
+    }
+  }
+}
