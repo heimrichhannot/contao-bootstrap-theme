@@ -72,3 +72,39 @@
     }
   }
 }
+
+
+@mixin form-multi-column($count: 6, $breakpoint: sm, $fullColFields: [], $submitBtnAlign: right) {
+  .formbody {
+    textarea {
+      height: auto !important;
+    }
+
+    @include media-breakpoint-up($breakpoint) {
+      @include make-row();
+
+      .form-group {
+        @include col($count);
+
+        @each $field in $fullColFields {
+          &.#{$field} {
+            @include col(12);
+          }
+        }
+
+        &.widget-submit {
+          @include col(12);
+          text-align: $submitBtnAlign;
+        }
+      }
+
+      [id^="sub_"] {
+        @include col(12);
+
+        .subpalette-body {
+          @include make-row();
+        }
+      }
+    }
+  }
+}

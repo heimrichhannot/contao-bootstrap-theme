@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.3.0] - 2019-09-30
+
+### Added
+- mixin: forms.scss -> form-multi-column();
+- non-important spacing classes (mb-5-ni) -> useful for global declarations that can be overridden afterwards
+
 ## [4.2.1] - 2019-09-17
 
 ### Fixed
