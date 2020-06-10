@@ -22,3 +22,18 @@
   $enable-responsive-font-sizes: true;
   @include rfs($max-font-size);
 }
+
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin multiline-ellipsis($line-count: 3, $padding-bottom: 2px) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-count;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-bottom: $padding-bottom;
+}
