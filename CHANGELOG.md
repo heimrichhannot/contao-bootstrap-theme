@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.4.1] - 2020-08-26
+- fixed privacy center style
+
 ## [4.4.0] - 2020-06-10
 - added mixins: type.scss -> ellipsis, multiline-ellipsis
 
