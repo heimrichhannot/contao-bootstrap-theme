@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.4.2] - 2020-08-26
+- fixed version
+
 ## [4.4.1] - 2020-08-26
 - fixed privacy center style
 
