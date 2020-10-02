@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [5.0.2] - 2020-10-02
+- accessibility: remove `text-decoration: underline` for buttons and pagination
+
 ## [5.0.1] - 2020-10-02
 - accessibility: added `text-decoration: underline` for links in #main
 

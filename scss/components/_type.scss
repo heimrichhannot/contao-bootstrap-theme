@@ -1,5 +1,11 @@
 a {
-  &:hover, &:focus {
+  &:hover, &:focus, &.btn {
+    text-decoration: none;
+  }
+}
+
+.pagination {
+  a {
     text-decoration: none;
   }
 }
@@ -13,7 +19,6 @@ a {
 .primary {
   color: map-get($theme-colors, primary);
 }
-
 
 .ellipsis {
   white-space: nowrap;
