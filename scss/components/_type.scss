@@ -7,6 +7,9 @@ a {
 .pagination {
   a {
     text-decoration: none;
+    &.btn {
+      text-decoration: none;
+    }
   }
 }
 
