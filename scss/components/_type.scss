@@ -1,6 +1,19 @@
+a {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+#main {
+  a {
+    text-decoration: underline;
+  }
+}
+
 .primary {
   color: map-get($theme-colors, primary);
 }
+
 
 .ellipsis {
   white-space: nowrap;
