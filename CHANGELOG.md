@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [5.0.0] - 2020-10-02
+- accessibility: removed `text-decoration: none` for links
+
 ## [4.4.2] - 2020-08-26
 - fixed version
 

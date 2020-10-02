@@ -1,13 +1,6 @@
-a {
-  &:hover, &:focus {
-    text-decoration: none;
-  }
-}
-
 .primary {
   color: map-get($theme-colors, primary);
 }
-
 
 .ellipsis {
   white-space: nowrap;
