@@ -1,21 +1,10 @@
-a {
-  &:hover, &:focus, &.btn {
-    text-decoration: none;
-  }
-}
-
-.pagination {
-  a {
-    text-decoration: none;
-    &.btn {
-      text-decoration: none;
-    }
-  }
-}
-
 #main {
-  a {
+  a:not(.btn):not(.more) {
     text-decoration: underline;
+  }
+
+  .more a, .pagination a {
+    text-decoration: none !important;
   }
 }
 
