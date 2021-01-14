@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [5.0.8] - 2021-01-14
+- fixed z-index of sweetalert (hidden under modal)
+
 ## [5.0.7] - 2020-10-08
 - fixed accessibility: remove `text-decoration: underline` for buttons
 
