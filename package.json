@@ -1,6 +1,6 @@
 {
   "name": "@hundh/contao-bootstrap-theme",
-  "version": "5.0.7",
+  "version": "6.0.0",
   "description": "Brings the most popular front-end framework for developing responsive, mobile first projects on the web to the contao content management system.",
   "main": "js/common",
   "repository": "git@github.com:heimrichhannot/contao-bootstrap-theme.git",
@@ -8,6 +8,6 @@
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5",
-    "bootstrap": "^4.0"
+    "bootstrap": "^5.0.0-beta2"
   }
 }

@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [6.0.0] - 2021-03-04
+- update to bootstrap 5.0.0.beta2
+
 ## [5.0.8] - 2021-01-14
 - fixed z-index of sweetalert (hidden under modal)
 
