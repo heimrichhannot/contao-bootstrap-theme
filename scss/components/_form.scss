@@ -15,7 +15,7 @@ form {
     textarea,
     select {
       &.error {
-        background-color: theme-color-level("danger", -10) !important;
+        background-color: shift-color($danger, -10) !important;
         clear: left;
       }
     }
@@ -24,18 +24,18 @@ form {
   .form-group {
     &.has-error {
       label, .help-block {
-        color: theme-color-level("danger", 6);
+        color: shift-color($danger, 6);
       }
 
       input {
-        border-color: theme-color-level("danger", -9);
+        border-color: shift-color($danger, -9);
       }
     }
   }
 
   p.error {
     @extend .alert;
-    @include alert-variant(theme-color-level("danger", -10), theme-color-level("danger", -9), theme-color-level("danger", 6));
+    @include alert-variant(shift-color($danger, -10), shift-color($danger, -9), shift-color($danger, 6));
   }
 
   .explanation {
@@ -64,7 +64,7 @@ form {
 
   &.jquery-validation {
     label.error {
-      color: theme-color-level("danger", 6);
+      color: shift-color($danger, 6);
     }
   }
 
@@ -184,13 +184,13 @@ form {
 .form-control-sm {
   .input-group & {
     &:not(:last-child) {
-      @include border-right-radius(0);
+      @include border-end-radius(0);
     }
   }
 
   .input-group & {
     &:not(:first-child) {
-      @include border-left-radius(0);
+      @include border-start-radius(0);
     }
   }
 }
@@ -198,13 +198,13 @@ form {
 .form-control-lg {
   .input-group & {
     &:not(:last-child) {
-      @include border-right-radius(0);
+      @include border-end-radius(0);
     }
   }
 
   .input-group & {
     &:not(:first-child) {
-      @include border-left-radius(0);
+      @include border-start-radius(0);
     }
   }
 }

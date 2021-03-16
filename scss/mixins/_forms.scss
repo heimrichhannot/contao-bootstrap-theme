@@ -2,7 +2,7 @@
   height: $input-height-sm;
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $font-size-sm;
-  line-height: $input-line-height-sm;
+  line-height: $line-height-sm;
 
   @if $enable-rounded {
     border-radius: $input-border-radius-sm;
@@ -12,13 +12,13 @@
 
   .input-group & {
     &:not(:last-child) {
-      @include border-right-radius(0);
+      @include border-end-radius(0);
     }
   }
 
   .input-group & {
     &:not(:first-child) {
-      @include border-left-radius(0);
+      @include border-start-radius(0);
     }
   }
 }
@@ -27,7 +27,7 @@
   height: $input-height-lg;
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $font-size-lg;
-  line-height: $input-line-height-lg;
+  line-height: $line-height-lg;
 
   @if $enable-rounded {
     border-radius: $input-border-radius-lg;
@@ -37,13 +37,13 @@
 
   .input-group & {
     &:not(:last-child) {
-      @include border-right-radius(0);
+      @include border-end-radius(0);
     }
   }
 
   .input-group & {
     &:not(:first-child) {
-      @include border-left-radius(0);
+      @include border-start-radius(0);
     }
   }
 }
@@ -62,13 +62,13 @@
 
   .input-group & {
     &:not(:last-child) {
-      @include border-right-radius(0);
+      @include border-end-radius(0);
     }
   }
 
   .input-group & {
     &:not(:first-child) {
-      @include border-left-radius(0);
+      @include border-start-radius(0);
     }
   }
 }

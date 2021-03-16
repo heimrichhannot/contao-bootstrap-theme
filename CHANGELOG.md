@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [6.1.0]
+- BS5 migrations
+- Renamed `border-left-radius()` and `border-right-radius()` to `border-start-radius()` and `border-end-radius()`
+- The `button-size()` does not accept line height parameters anymore
+- The `theme-color-level()` function is dropped -> changed to `shift-color()`
+- `$input-line-height-sm` and `-md` are dropped -> changed to `$line-height-sm`, `-md`
+- The`theme-color()` is dropped, used variants instead
+
 ## [6.0.0] - 2021-03-04
 - update to bootstrap 5.0.0.beta2
 
