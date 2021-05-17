@@ -3,11 +3,17 @@
 Thumbs.db
 
 # IDEs
-.buildpath
-.project
-.settings/
 .build/
+.buildpath
 .idea/
 nbproject/
-yarn.lock
+.project
+.settings/
+.vscode
+.history
+*.code-workspace
+
+# dirs
 node_modules/
+
+yarn.lock

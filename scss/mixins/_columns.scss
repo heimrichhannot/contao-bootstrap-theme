@@ -173,3 +173,13 @@ for $gutters variables
     }
   }
 }
+
+@mixin col-full {
+  width: 100vw;
+  max-width: unset;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}

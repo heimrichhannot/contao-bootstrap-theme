@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [6.2.0]
+- added col-full mixin
+- added heading styles
+- updated gitignore
+
 ## [6.1.0]
 - BS5 migrations
 - Renamed `border-left-radius()` and `border-right-radius()` to `border-start-radius()` and `border-end-radius()`
