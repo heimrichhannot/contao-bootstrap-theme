@@ -37,3 +37,35 @@
   overflow: hidden;
   padding-bottom: $padding-bottom;
 }
+
+@mixin headline-styles($level) {
+  $headline-var-map: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+  );
+  [class*="ce_"], [class*="mod_"] {
+    &.has-h#{$level}-style {
+      h1, h2, h3, h4, h5, h6 {
+        &:first-of-type {
+          @extend %heading;
+          @include font-size(map-get($headline-var-map, $level));
+          @content;
+        }
+      }
+    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    &.has-h#{$level}-style {
+      @extend %heading;
+      @include font-size(map-get($headline-var-map, $level));
+      @content;
+    }
+  }
+  h#{$level}, .h#{$level} {
+    @content;
+  }
+}
