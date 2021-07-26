@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [6.5.1]
+- fixed z-index for sweet alert 2
+
 ## [6.5.0]
 - added mixin `headline-styles`
 
