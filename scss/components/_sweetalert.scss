@@ -30,4 +30,46 @@
   z-index: 10001 !important;
 }
 
+.swal2-modal {
+  border-radius: 0 !important;
 
+  .swal2-close {
+    &,
+    &:hover {
+      color: $body-color;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .swal2-icon {
+    &.swal2-success {
+      border-color: $success;
+      color: $success;
+
+      [class^="swal2-success-line"] {
+        background-color: $success;
+      }
+
+      .swal2-success-ring {
+        border-color: $success;
+      }
+    }
+
+    &.swal2-error {
+      border-color: $danger;
+      color: $danger;
+
+      [class^="swal2-x-mark-line"],
+      .swal2-success-ring {
+        background-color: $danger;
+      }
+
+      .swal2-error-ring {
+        border-color: $danger;
+      }
+    }
+  }
+}
