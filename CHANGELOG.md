@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [6.6.1] - 2023-06-01
+
+- Changed: components/form alert shift color since it will be deprecated in future bootstrap versions
+
 ## [6.6.0] - 2022-03-14
 
 - Added: sweetalert 2 styles
